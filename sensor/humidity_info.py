@@ -1,11 +1,12 @@
 from house_info import HouseInfo
 from datetime import date, datetime
+
 class HumidityData(HouseInfo):
     def _convert_data(self, data):
         recs = []
         for rec in data:
-            rec = float(rec) * 100
-            recs.append(rec)
+            # rec = float(rec) * 100
+            recs.append(float(rec) * 100)
         return recs
 
     def get_data_by_area(self, rec_area = 0):
