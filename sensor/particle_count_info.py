@@ -5,8 +5,8 @@ class ParticleData(HouseInfo):
     def _convert_data(self, data):
         recs = []
         for rec in data:
-            rec = float(rec)
-            recs.append(rec)
+            # rec = float(rec)
+            recs.append(float(rec))
         return recs
 
     def get_data_by_area(self, rec_area = 0):
